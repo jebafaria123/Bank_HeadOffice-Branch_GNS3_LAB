@@ -1,0 +1,62 @@
+Oct 15 09:26:06.276 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 15 09:26:06.276 HYPERVISOR: Started on TCP port = 61533.
+Oct 15 09:26:06.293 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 15 09:26:06.294 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\jeba.faria\GNS3\projects\IP_Planning_New\project-files\dynamips 
+Oct 15 09:26:06.294 GENERAL: working_dir=C:\Users\jeba.faria\GNS3\projects\IP_Planning_New\project-files\dynamips
+Oct 15 09:26:06.294 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\jeba.faria\GNS3\projects\IP_Planning_New\project-files\dynamips\3e62d792-db67-4ae9-87a5-f6233ec981ea 
+Oct 15 09:26:06.294 GENERAL: working_dir=C:\Users\jeba.faria\GNS3\projects\IP_Planning_New\project-files\dynamips\3e62d792-db67-4ae9-87a5-f6233ec981ea
+Oct 15 09:26:06.294 HYPERVISOR: exec_cmd: vm create Pop1 4 c7200 
+Oct 15 09:26:06.297 VM: VM Pop1 created.
+Oct 15 09:26:06.297 HYPERVISOR: exec_cmd: vm set_con_tcp_port Pop1 5003 
+Oct 15 09:26:06.297 HYPERVISOR: exec_cmd: c7200 get_mac_addr Pop1 
+Oct 15 09:26:06.297 HYPERVISOR: exec_cmd: vm get_status Pop1 
+Oct 15 09:26:06.297 HYPERVISOR: exec_cmd: vm slot_add_binding Pop1 0 0 C7200-IO-FE 
+Oct 15 09:26:06.297 HYPERVISOR: exec_cmd: vm set_disk0 Pop1 0 
+Oct 15 09:26:06.298 HYPERVISOR: exec_cmd: vm set_exec_area Pop1 64 
+Oct 15 09:26:06.298 HYPERVISOR: exec_cmd: vm get_status Pop1 
+Oct 15 09:26:06.298 HYPERVISOR: exec_cmd: vm set_idle_pc Pop1 0x6318687c 
+Oct 15 09:26:06.298 HYPERVISOR: exec_cmd: vm set_ios Pop1 C:/Users/jeba.faria/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 15 09:26:06.298 HYPERVISOR: exec_cmd: c7200 set_mac_addr Pop1 ca04.14c4.0000 
+Oct 15 09:26:06.298 HYPERVISOR: exec_cmd: vm set_nvram Pop1 512 
+Oct 15 09:26:06.298 HYPERVISOR: exec_cmd: vm set_ram Pop1 512 
+Oct 15 09:26:06.298 HYPERVISOR: exec_cmd: vm get_status Pop1 
+Oct 15 09:26:06.298 HYPERVISOR: exec_cmd: vm slot_add_binding Pop1 1 0 PA-GE 
+Oct 15 09:26:06.298 HYPERVISOR: exec_cmd: vm get_status Pop1 
+Oct 15 09:26:06.298 HYPERVISOR: exec_cmd: vm slot_add_binding Pop1 2 0 PA-GE 
+Oct 15 09:26:06.298 HYPERVISOR: exec_cmd: vm get_status Pop1 
+Oct 15 09:26:06.298 HYPERVISOR: exec_cmd: vm slot_add_binding Pop1 3 0 PA-4E 
+Oct 15 09:26:06.302 HYPERVISOR: exec_cmd: vm get_status Pop1 
+Oct 15 09:26:06.302 HYPERVISOR: exec_cmd: vm slot_add_binding Pop1 4 0 PA-4E 
+Oct 15 09:26:10.068 HYPERVISOR: exec_cmd: nio create_udp udp-0222ab48-d208-49e1-a542-cbc1f2c01b17 10002 127.0.0.1 10003 
+Oct 15 09:26:10.792 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Pop1 3 0 udp-0222ab48-d208-49e1-a542-cbc1f2c01b17 
+Oct 15 09:26:10.792 HYPERVISOR: exec_cmd: vm get_status Pop1 
+Oct 15 09:26:10.860 HYPERVISOR: exec_cmd: nio create_udp udp-b728da84-8514-4e5e-ac9e-08ca629cd9b2 10006 127.0.0.1 10007 
+Oct 15 09:26:10.860 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Pop1 3 1 udp-b728da84-8514-4e5e-ac9e-08ca629cd9b2 
+Oct 15 09:26:10.860 HYPERVISOR: exec_cmd: vm get_status Pop1 
+Oct 15 09:26:11.488 HYPERVISOR: exec_cmd: nio create_udp udp-c3b00345-5fbd-43fe-b996-ca17b165d5cd 10018 127.0.0.1 10019 
+Oct 15 09:26:11.488 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Pop1 3 2 udp-c3b00345-5fbd-43fe-b996-ca17b165d5cd 
+Oct 15 09:26:11.488 HYPERVISOR: exec_cmd: vm get_status Pop1 
+Oct 15 09:26:23.111 HYPERVISOR: exec_cmd: vm set_ghost_status Pop1 2 
+Oct 15 09:26:23.111 HYPERVISOR: exec_cmd: vm set_ghost_file Pop1 C:\Users\jeba.faria\GNS3\projects\IP_Planning_New\project-files\dynamips\c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Oct 15 09:26:23.111 HYPERVISOR: exec_cmd: vm get_status Pop1 
+Oct 15 09:26:23.119 HYPERVISOR: exec_cmd: vm set_config Pop1 configs\i4_startup-config.cfg configs\i4_private-config.cfg 
+Oct 15 09:26:23.119 HYPERVISOR: exec_cmd: vm start Pop1 
+Oct 15 09:26:53.481 HYPERVISOR: exec_cmd: vm extract_config Pop1 
+Oct 15 09:38:43.138 HYPERVISOR: exec_cmd: vm set_ios Pop1 C:/Users/jeba.faria/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 15 10:23:15.845 HYPERVISOR: exec_cmd: vm set_ghost_status Pop1 2 
+Oct 15 10:23:15.845 HYPERVISOR: exec_cmd: vm set_ghost_file Pop1 C:\Users\jeba.faria\GNS3\projects\IP_Planning_New\project-files\dynamips\c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Oct 15 10:23:15.861 HYPERVISOR: exec_cmd: vm get_status Pop1 
+Oct 15 10:25:13.123 HYPERVISOR: exec_cmd: vm set_ghost_status Pop1 2 
+Oct 15 10:25:13.123 HYPERVISOR: exec_cmd: vm set_ghost_file Pop1 C:\Users\jeba.faria\GNS3\projects\IP_Planning_New\project-files\dynamips\c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Oct 15 10:25:13.138 HYPERVISOR: exec_cmd: vm get_status Pop1 
+Oct 15 18:23:16.076 HYPERVISOR: exec_cmd: vm get_status Pop1 
+Oct 15 18:23:16.077 HYPERVISOR: exec_cmd: vm stop Pop1 
+Oct 15 18:23:16.278 VM: VM Pop1 shutdown.
+Oct 15 18:23:16.280 HYPERVISOR: exec_cmd: vm extract_config Pop1 
+Oct 15 18:23:17.354 HYPERVISOR: exec_cmd: vm get_status Pop1 
+Oct 15 18:23:17.354 HYPERVISOR: exec_cmd: vm extract_config Pop1 
+Oct 15 18:23:17.359 HYPERVISOR: exec_cmd: vm delete Pop1 
+Oct 15 18:23:17.359 VM: VM Pop1 destroyed.
+Oct 15 18:23:17.362 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 15 18:23:17.549 HYPERVISOR: Stopped.
+Oct 15 18:23:17.549 GENERAL: reset done.

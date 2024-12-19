@@ -1,0 +1,53 @@
+Nov 04 12:08:41.117 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 04 12:08:41.133 HYPERVISOR: Started on TCP port = 57957.
+Nov 04 12:08:41.625 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 04 12:08:41.625 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\jeba.faria\GNS3\projects\IP_Planning_New\project-files\dynamips 
+Nov 04 12:08:41.625 GENERAL: working_dir=C:\Users\jeba.faria\GNS3\projects\IP_Planning_New\project-files\dynamips
+Nov 04 12:08:41.625 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\jeba.faria\GNS3\projects\IP_Planning_New\project-files\dynamips\df95e360-ef3d-40b4-ac6d-b167f1839e85 
+Nov 04 12:08:41.625 GENERAL: working_dir=C:\Users\jeba.faria\GNS3\projects\IP_Planning_New\project-files\dynamips\df95e360-ef3d-40b4-ac6d-b167f1839e85
+Nov 04 12:08:41.625 HYPERVISOR: exec_cmd: vm create Branch1 9 c7200 
+Nov 04 12:08:41.632 VM: VM Branch1 created.
+Nov 04 12:08:41.633 HYPERVISOR: exec_cmd: vm set_con_tcp_port Branch1 5010 
+Nov 04 12:08:41.633 HYPERVISOR: exec_cmd: c7200 get_mac_addr Branch1 
+Nov 04 12:08:41.633 HYPERVISOR: exec_cmd: vm get_status Branch1 
+Nov 04 12:08:41.633 HYPERVISOR: exec_cmd: vm slot_add_binding Branch1 0 0 C7200-IO-FE 
+Nov 04 12:08:41.633 HYPERVISOR: exec_cmd: vm set_disk0 Branch1 0 
+Nov 04 12:08:41.633 HYPERVISOR: exec_cmd: vm set_exec_area Branch1 64 
+Nov 04 12:08:41.633 HYPERVISOR: exec_cmd: vm get_status Branch1 
+Nov 04 12:08:41.633 HYPERVISOR: exec_cmd: vm set_idle_pc Branch1 0x6318687c 
+Nov 04 12:08:41.633 HYPERVISOR: exec_cmd: vm set_ios Branch1 C:/Users/jeba.faria/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Nov 04 12:08:41.633 HYPERVISOR: exec_cmd: c7200 set_mac_addr Branch1 ca09.30cc.0000 
+Nov 04 12:08:41.633 HYPERVISOR: exec_cmd: vm set_nvram Branch1 512 
+Nov 04 12:08:41.633 HYPERVISOR: exec_cmd: vm set_ram Branch1 512 
+Nov 04 12:08:41.633 HYPERVISOR: exec_cmd: vm get_status Branch1 
+Nov 04 12:08:41.633 HYPERVISOR: exec_cmd: vm slot_add_binding Branch1 1 0 PA-GE 
+Nov 04 12:08:41.633 HYPERVISOR: exec_cmd: vm get_status Branch1 
+Nov 04 12:08:41.633 HYPERVISOR: exec_cmd: vm slot_add_binding Branch1 2 0 PA-GE 
+Nov 04 12:08:41.633 HYPERVISOR: exec_cmd: vm get_status Branch1 
+Nov 04 12:08:41.633 HYPERVISOR: exec_cmd: vm slot_add_binding Branch1 3 0 PA-4E 
+Nov 04 12:08:41.633 HYPERVISOR: exec_cmd: vm get_status Branch1 
+Nov 04 12:08:41.633 HYPERVISOR: exec_cmd: vm slot_add_binding Branch1 4 0 PA-4E 
+Nov 04 12:08:47.524 HYPERVISOR: exec_cmd: nio create_udp udp-9de0e6bf-b04b-4719-922d-46628325f59c 10050 127.0.0.1 10051 
+Nov 04 12:08:47.842 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Branch1 3 0 udp-9de0e6bf-b04b-4719-922d-46628325f59c 
+Nov 04 12:08:47.842 HYPERVISOR: exec_cmd: vm get_status Branch1 
+Nov 04 12:08:47.910 HYPERVISOR: exec_cmd: nio create_udp udp-c51e0331-5c9f-49c9-a6f9-0bce54cfcf39 10056 127.0.0.1 10057 
+Nov 04 12:08:47.910 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Branch1 3 1 udp-c51e0331-5c9f-49c9-a6f9-0bce54cfcf39 
+Nov 04 12:08:47.910 HYPERVISOR: exec_cmd: vm get_status Branch1 
+Nov 04 12:20:11.488 HYPERVISOR: exec_cmd: vm set_ghost_status Branch1 2 
+Nov 04 12:20:11.489 HYPERVISOR: exec_cmd: vm set_ghost_file Branch1 C:\Users\jeba.faria\GNS3\projects\IP_Planning_New\project-files\dynamips\c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Nov 04 12:20:11.489 HYPERVISOR: exec_cmd: vm get_status Branch1 
+Nov 04 12:20:11.497 HYPERVISOR: exec_cmd: vm set_config Branch1 configs\i9_startup-config.cfg configs\i9_private-config.cfg 
+Nov 04 12:20:11.497 HYPERVISOR: exec_cmd: vm start Branch1 
+Nov 04 12:20:52.951 HYPERVISOR: exec_cmd: vm extract_config Branch1 
+Nov 04 16:22:32.361 HYPERVISOR: exec_cmd: vm extract_config Branch1 
+Nov 04 17:31:05.814 HYPERVISOR: exec_cmd: vm get_status Branch1 
+Nov 04 17:31:05.814 HYPERVISOR: exec_cmd: vm stop Branch1 
+Nov 04 17:31:06.048 VM: VM Branch1 shutdown.
+Nov 04 17:31:06.048 HYPERVISOR: exec_cmd: vm extract_config Branch1 
+Nov 04 17:31:06.366 HYPERVISOR: exec_cmd: vm get_status Branch1 
+Nov 04 17:31:06.372 HYPERVISOR: exec_cmd: vm extract_config Branch1 
+Nov 04 17:31:06.376 HYPERVISOR: exec_cmd: vm delete Branch1 
+Nov 04 17:31:06.376 VM: VM Branch1 destroyed.
+Nov 04 17:31:06.378 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 04 17:31:06.668 HYPERVISOR: Stopped.
+Nov 04 17:31:06.668 GENERAL: reset done.
